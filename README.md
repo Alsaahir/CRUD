@@ -1,8 +1,16 @@
 # Django REST API for Managing Persons
 
+## API Documentation
+
 This is a simple Django REST API for managing person records. It supports basic CRUD (Create, Read, Update, Delete) operations for the "Person" resource.
 
-## API Documentation
+# Setup and Installation
+
+1. Clone the repository `https://github.com/Alsaahir/CRUD.git`
+2. Install required dependencies: `pip install -r requirements.txt`
+3. Run migrations: `python manage.py migrate`
+4. Start the development server: `python manage.py runserver`
+
 
 #### Create a Person (POST /api)
 
@@ -140,17 +148,6 @@ curl -X DELETE http://127.0.0.1:8000/api/2297fccd-4141-4123-8b4f-f9f2ff9aaec4
 
 * Assumption: The email field is optional, and if not provided, it defaults to an empty string.
 * Limitation: The API will not return all person in the database but instead, the API will only return the details of the person whose id you provided. which means that, if you dont know the id of the user, you will not be able to see their details
-
-
-# Setup and Deployment Instructions
-
-## Local Development
-
-1. Clone the repository `https://github.com/Alsaahir/CRUD.git`
-2. Install required dependencies: `pip install -r requirements.txt`
-3. Configure the database settings in `settings.py.`
-4. Run migrations: `python manage.py migrate`
-5. Start the development server: `python manage.py runserver`
 
 
 Have fun!
