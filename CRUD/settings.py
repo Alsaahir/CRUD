@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-0d3c6^r#xpb&d0(a@g76zuz3ubnqr&m1#4g@2ed@r5_24i*x3f
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hngx-crud-45b98b39c93b.herokuapp.com', '127.0.0.1:8000']
+ALLOWED_HOSTS = ['hngx-crud-45b98b39c93b.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -144,5 +144,5 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# if os.getcwd() == '/app':
-#     DEBUG = False
+if os.getcwd() == '/app':
+    DEBUG = False
